@@ -11,8 +11,27 @@ https://learn.microsoft.com/em-use/cli/azure
 az login
 ```
 
-## Create Resource Group
+### Create Resource Group
 
 ```bash
 az group create --name urlshortener-dev --location mexicocentral
 ```
+
+### What if
+```bash
+az deployment group what-if --resource-group urlshortener-dev --template-file infrastructure/main.bicep
+```
+
+### Deploy
+```bash
+az deployment group create --resource-group urlshortener-dev --template-file infrastructure/main.bicep
+```
+
+### Create user for GH Actions
+
+```bash
+az ad sp create-for-rbac --name "Github-Actions-SP" --role contributor --scopes /subscriptions/{SubscriptionId} --sdk-auth
+```
+
+#### Configure a federated identity credential on an app
+https://learn.microsoft.com/en-us/entra/workload-id/workload-identity-federation-create-trust?pivots=identity-wif-apps-methods-azp#configure-a-federated-identity-credential-on-an-app
