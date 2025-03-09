@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.Api", "Api\src\UrlShortener.Api\UrlShortener.Api.csproj", "{8BA89C24-ED23-4CAD-8DCA-B00522983CAE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3BEA6661-A2CF-4D68-85A6-65190235E96F}"
+	ProjectSection(SolutionItems) = preProject
+		Api\src\testlist.txt = Api\src\testlist.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FBDEC3CA-B02F-4A1B-A683-19AD773EB2FE}"
 EndProject
