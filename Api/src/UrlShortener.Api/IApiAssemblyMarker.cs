@@ -1,6 +1,6 @@
 namespace UrlShortener.Api;
 
-public interface IAssemblyMarker
+public interface IApiAssemblyMarker
 {
     
 }
