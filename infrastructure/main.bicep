@@ -37,7 +37,7 @@ module tokenRangeService 'modules/compute/appservice.bicep' = {
   name: 'tokenRangeServiceDeployment'
   params: {
     appName: 'token-range-service-${uniqueId}'
-    appServicePlanName: 'plan-api-${uniqueId}'
+    appServicePlanName: 'plan-token-${uniqueId}'
     location: location
     keyVaultName: keyVault.outputs.name
   }

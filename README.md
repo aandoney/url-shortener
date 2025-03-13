@@ -40,3 +40,9 @@ az ad sp create-for-rbac --name "Github-Actions-SP" --role 'infra_deploy' --scop
 
 #### Configure a federated identity credential on an app
 https://learn.microsoft.com/en-us/entra/workload-id/workload-identity-federation-create-trust?pivots=identity-wif-apps-methods-azp#configure-a-federated-identity-credential-on-an-app
+
+## Get Azure Publish Profile
+
+```bash
+az webapp deployment list-publishing-profiles --name {AppServiceName} --resource-group {ResourceGroup} --xml
+```

@@ -30,6 +30,8 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+app.MapGet("/", () => "Api Service");
+
 app.UseHttpsRedirection();
 
 app.MapPost("/api/urls",
