@@ -29,6 +29,10 @@ module apiService 'modules/compute/appservice.bicep' = {
         name: 'ContainerName'
         value: 'items'
       }
+      {
+        name: 'TokenRangeService__Endpoint'
+        value: tokenRangeService.outputs.url
+      }
     ]
   }
 }
@@ -72,6 +76,7 @@ module keyVaultRoleAssignment 'modules/secrets/key-vault-role-assignment.bicep' 
     keyVaultName: keyVault.outputs.name
     principalIds: [
       apiService.outputs.principalId
+      tokenRangeService.outputs.principalId
     ]
   }
 }

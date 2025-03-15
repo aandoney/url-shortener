@@ -28,6 +28,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4CC750C7-133
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.TokenRangesService", "TokenRanges\src\UrlShortener.TokenRangesService\UrlShortener.TokenRangesService.csproj", "{C8EC735C-675E-4035-98D9-82BEF2E88FF9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8C70599F-7DA0-4D1C-9BC7-AD4B35BB0FD4}"
+	ProjectSection(SolutionItems) = preProject
+		TokenRanges\tests\Table.sql = TokenRanges\tests\Table.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortener.TokenRangesService.Tests", "TokenRanges\tests\UrlShortener.TokenRangesService.Tests\UrlShortener.TokenRangesService.Tests.csproj", "{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -110,6 +117,18 @@ Global
 		{C8EC735C-675E-4035-98D9-82BEF2E88FF9}.Release|x64.Build.0 = Release|Any CPU
 		{C8EC735C-675E-4035-98D9-82BEF2E88FF9}.Release|x86.ActiveCfg = Release|Any CPU
 		{C8EC735C-675E-4035-98D9-82BEF2E88FF9}.Release|x86.Build.0 = Release|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Debug|x64.Build.0 = Debug|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Debug|x86.Build.0 = Debug|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Release|x64.ActiveCfg = Release|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Release|x64.Build.0 = Release|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Release|x86.ActiveCfg = Release|Any CPU
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,5 +143,7 @@ Global
 		{97CC2486-D7F2-412A-8635-00D32FB3CFF6} = {3BEA6661-A2CF-4D68-85A6-65190235E96F}
 		{4CC750C7-133F-60E6-6C75-A236473B5796} = {A31E2A3B-E002-449E-0383-74489413EA38}
 		{C8EC735C-675E-4035-98D9-82BEF2E88FF9} = {4CC750C7-133F-60E6-6C75-A236473B5796}
+		{8C70599F-7DA0-4D1C-9BC7-AD4B35BB0FD4} = {A31E2A3B-E002-449E-0383-74489413EA38}
+		{9DB6A2C9-39B7-4C14-B6C1-530160AD9086} = {8C70599F-7DA0-4D1C-9BC7-AD4B35BB0FD4}
 	EndGlobalSection
 EndGlobal
